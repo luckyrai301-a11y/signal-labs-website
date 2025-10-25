@@ -12,14 +12,32 @@
     <header class="p-4 border-b border-gray-700">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo -->
-            <h1 class="text-2xl font-bold">Signal Labs</h1>
-            <!-- Navigation Links -->
+            <h1 class="text-2xl font-bold"><a href="./index.html">Signal Labs</a></h1>
+            
+            <!-- Desktop Navigation Links -->
             <nav class="hidden md:flex space-x-6">
                 <a href="./about.html" class="hover:text-blue-400">About</a>
                 <a href="./services.html" class="hover:text-blue-400">Services</a>
                 <a href="#" class="hover:text-blue-400">Case Studies</a>
                 <a href="./contact.html" class="hover:text-blue-400">Contact</a>
             </nav>
+
+            <!-- Mobile Menu Button (Hamburger Icon) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Initially hidden) -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4">
+            <a href="./about.html" class="block py-2 px-4 text-sm hover:bg-gray-700">About</a>
+            <a href="./services.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Services</a>
+            <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-700">Case Studies</a>
+            <a href="./contact.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Contact</a>
         </div>
     </header>
 
@@ -35,16 +53,26 @@
                 Combining on-ground research with data-driven strategies to grow your business.
             </p>
             <!-- CTA Buttons -->
-            <div class="mt-8 space-x-4">
-                <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded">
+            <div class="mt-8 space-y-4 md:space-y-0 md:space-x-4">
+                <a href="./contact.html" class="block md:inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded">
                     Get Your Free Diagnosis
                 </a>
-                <a href="#" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded">
+                <a href="#" class="block md:inline-block bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded">
                     See Our Work
                 </a>
             </div>
         </div>
     </main>
+
+    <!-- JavaScript to toggle the mobile menu -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 
 </body>
 </html>
