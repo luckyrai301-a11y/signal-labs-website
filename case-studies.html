@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Case Studies - Signal Labs</title>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- HEADER / NAVIGATION BAR -->
+    <header class="p-4 border-b border-gray-700">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <h1 class="text-2xl font-bold"><a href="./index.html">Signal Labs</a></h1>
+            
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="./about.html" class="hover:text-blue-400">About</a>
+                <a href="./services.html" class="hover:text-blue-400">Services</a>
+                <!-- Mark the current page as active -->
+                <a href="./case-studies.html" class="text-blue-400 font-bold">Case Studies</a>
+                <a href="./contact.html" class="hover:text-blue-400">Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Button (Hamburger Icon) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Initially hidden) -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4">
+            <a href="./about.html" class="block py-2 px-4 text-sm hover:bg-gray-700">About</a>
+            <a href="./services.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Services</a>
+            <a href="./case-studies.html" class="block py-2 px-4 text-sm bg-gray-700">Case Studies</a> <!-- Active state for mobile -->
+            <a href="./contact.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Contact</a>
+        </div>
+    </header>
+
+    <!-- CASE STUDIES SECTION -->
+    <main class="container mx-auto py-16 px-4">
+        <h2 class="text-4xl font-bold text-center mb-12">Our Work in Action</h2>
+        
+        <div class="space-y-16 max-w-4xl mx-auto">
+            <!-- Case Study 1: FIFA World Cup -->
+            <div class="bg-gray-800 p-8 rounded-lg border border-gray-700">
+                <h3 class="text-2xl font-semibold text-blue-400">Project: FIFA World Cup 2022, Qatar</h3>
+                <p class="text-sm text-gray-400 mt-1">Focus: Crowd Management & Fan Experience</p>
+                
+                <div class="mt-6">
+                    <strong class="text-lg">The Challenge:</strong>
+                    <p class="text-gray-300">To deliver a world-class fan experience for a global audience within a culturally conservative environment, maximizing engagement and revenue.</p>
+                </div>
+
+                <div class="mt-4">
+                    <strong class="text-lg">On-Ground Diagnosis:</strong>
+                    <p class="text-gray-300">Our on-ground observation revealed a gap between fan expectations for a celebratory football atmosphere and the existing local restrictions. We identified key friction points in crowd movement and a clear demand for more liberal fan zones.</p>
+                </div>
+
+                <div class="mt-4">
+                    <strong class="text-lg">The Growth (Result):</strong>
+                    <p class="text-gray-300">By providing data-backed recommendations, including the strategic approval of alcohol in designated zones, the result was a significant boost in fan satisfaction, positive international press, and record-breaking revenue generation for a host nation.</p>
+                </div>
+            </div>
+
+            <!-- Case Study 2: YouTube Fanfest (Placeholder) -->
+            <div class="bg-gray-800 p-8 rounded-lg border border-gray-700">
+                <h3 class="text-2xl font-semibold text-blue-400">Project: YouTube FanFest</h3>
+                <p class="text-sm text-gray-400 mt-1">Focus: Creator & Audience Engagement</p>
+                <p class="text-gray-300 mt-4">Our team analyzed audience flow and interaction patterns to recommend changes that increased on-site engagement by 25%. More details coming soon...</p>
+            </div>
+            
+            <!-- Case Study 3: Miss India 2018 (Placeholder) -->
+            <div class="bg-gray-800 p-8 rounded-lg border border-gray-700">
+                <h3 class="text-2xl font-semibold text-blue-400">Project: Miss India 2018</h3>
+                <p class="text-sm text-gray-400 mt-1">Focus: Brand Activation & Media Reach</p>
+                <p class="text-gray-300 mt-4">Through on-ground observation of media and audience behaviour, we helped optimize brand activation strategies, leading to a 40% increase in media mentions. More details coming soon...</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript to toggle the mobile menu -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
