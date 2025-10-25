@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Contact Us - Signal Labs</title>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- HEADER / NAVIGATION BAR -->
+    <header class="p-4 border-b border-gray-700">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold"><a href="./index.html">Signal Labs</a></h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="./about.html" class="hover:text-blue-400">About</a>
+                <a href="./services.html" class="hover:text-blue-400">Services</a>
+                <a href="#" class="hover:text-blue-400">Case Studies</a>
+                <!-- This is the current page, so it's active -->
+                <a href="./contact.html" class="text-blue-400 font-bold">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTACT SECTION -->
+    <main class="container mx-auto py-16 px-4">
+        <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-4xl font-bold">Start the Conversation</h2>
+            <p class="text-gray-400 mt-4">Ready to grow? Let's talk about your business. Schedule your free diagnosis call today.</p>
+        </div>
+
+        <div class="mt-12 max-w-xl mx-auto">
+            <!-- IMPORTANT: Replace "your-formspree-id" with your actual Formspree endpoint -->
+            <form action="https://formspree.io/f/your-formspree-id" method="POST" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-300">Full Name</label>
+                    <input type="text" name="name" id="name" required class="mt-1 block w-full bg-gray-800 border-gray-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-white p-3">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-300">Email Address</label>
+                    <input type="email" name="email" id="email" required class="mt-1 block w-full bg-gray-800 border-gray-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-white p-3">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-300">How can we help?</label>
+                    <textarea name="message" id="message" rows="4" required class="mt-1 block w-full bg-gray-800 border-gray-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-white p-3"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg">
+                        Book Free Consultation
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
