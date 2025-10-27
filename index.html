@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Signal Labs - Diagnose. Prescribe. Grow.</title>
-    <meta name="description" content="Signal Labs diagnoses business challenges, prescribes data-driven strategies, and executes growth campaigns. Combining on-ground research with analytics.">
+    <title>Signal Labs | AI-Driven Growth Architecture for F&B Businesses</title>
+    <meta name="description" content="Signal Labs is a growth intelligence agency that helps restaurants & pubs in Mumbai win the weekday war. We use data-driven systems, not guesswork. Get your free diagnosis.">
+    <style>
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(8.1px);
+            -webkit-backdrop-filter: blur(8.1px);
+        }
+    </style>
 </head>
-
 <body class="bg-gray-900 text-white pt-20">
-
     <!-- HEADER / NAVIGATION BAR -->
-    <header class="fixed top-0 left-0 w-full z-10 p-4 bg-gray-900/50 backdrop-blur-md">
+    <header class="p-4 glassmorphism fixed top-0 left-0 w-full z-10">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo -->
-            <!-- Logo -->
-<!-- Logo -->
-<a href="./index.html" class="block" style="height: 48px;">
-    <img class="h-full w-auto" src="./assets/logo.png" alt="Signal Labs Logo">
-</a>
+            <a href="./index.html" class="text-xl font-bold">
+                <img class="h-12 w-auto" src="./assets/logo.png" alt="Signal Labs Logo">
+            </a>
+
             <!-- Desktop Navigation Links -->
             <nav class="hidden md:flex space-x-6">
                 <a href="./about.html" class="hover:text-blue-400">About</a>
@@ -36,7 +42,6 @@
                 </button>
             </div>
         </div>
-
         <!-- Mobile Menu (Initially hidden) -->
         <div id="mobile-menu" class="hidden md:hidden mt-4">
             <a href="./about.html" class="block py-2 px-4 text-sm hover:bg-gray-700">About</a>
@@ -59,16 +64,16 @@
             </p>
             <!-- CTA Buttons -->
             <div class="mt-8 space-y-4 md:space-y-0 md:space-x-4 px-8">
-                <a href="./contact.html" class="block md:inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded">
+                <a href="./contact.html" class="md:inline-block block md:inline bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded">
                     Get Your Free Diagnosis
                 </a>
-                <a href="#" class="block md:inline-block bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded">
+                <a href="./case-studies.html" class="md:inline-block block md:inline bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded">
                     See Our Work
                 </a>
             </div>
         </div>
     </main>
-
+    
     <!-- JavaScript to toggle the mobile menu -->
     <script>
         const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -78,6 +83,5 @@
             mobileMenu.classList.toggle('hidden');
         });
     </script>
-
 </body>
 </html>

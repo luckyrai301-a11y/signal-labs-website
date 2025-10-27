@@ -4,45 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Our Services - Signal Labs</title>
+    <title>Services: Business Intelligence & Marketing Campaigns | Signal Labs</title>
     <meta name="description" content="Our services include Business Intelligence (The Diagnosis) and Marketing Campaigns (The Prescription). We handle everything from KPI dashboards to paid ads.">
-
+    <style>
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(8.1px);
+            -webkit-backdrop-filter: blur(8.1px);
+        }
+    </style>
 </head>
-
 <body class="bg-gray-900 text-white pt-20">
-
     <!-- HEADER / NAVIGATION BAR -->
-    <header class="fixed top-0 left-0 w-full z-10 p-4 bg-gray-900/50 backdrop-blur-md">
+    <header class="p-4 glassmorphism fixed top-0 left-0 w-full z-10">
         <div class="container mx-auto flex justify-between items-center">
-            <!-- Logo -->
-            <!-- Logo -->
-<!-- Logo -->
-<a href="./index.html" class="block" style="height: 48px;">
-    <img class="h-full w-auto" src="./assets/logo.png" alt="Signal Labs Logo">
-</a>
-            <!-- Desktop Navigation Links -->
+            <a href="./index.html" class="text-xl font-bold"><img class="h-12 w-auto" src="./assets/logo.png" alt="Signal Labs Logo"></a>
             <nav class="hidden md:flex space-x-6">
                 <a href="./about.html" class="hover:text-blue-400">About</a>
-                <!-- Mark the current page as active -->
                 <a href="./services.html" class="text-blue-400 font-bold">Services</a>
                 <a href="./case-studies.html" class="hover:text-blue-400">Case Studies</a>
                 <a href="./contact.html" class="hover:text-blue-400">Contact</a>
             </nav>
-
-            <!-- Mobile Menu Button (Hamburger Icon) -->
-            <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-white focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
+            <div class="md:hidden"><button id="mobile-menu-button" class="text-white focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div>
         </div>
-
-        <!-- Mobile Menu (Initially hidden) -->
         <div id="mobile-menu" class="hidden md:hidden mt-4">
             <a href="./about.html" class="block py-2 px-4 text-sm hover:bg-gray-700">About</a>
-            <a href="./services.html" class="block py-2 px-4 text-sm bg-gray-700">Services</a> <!-- Active state for mobile -->
+            <a href="./services.html" class="block py-2 px-4 text-sm bg-gray-700">Services</a> <!-- Active state -->
             <a href="./case-studies.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Case Studies</a>
             <a href="./contact.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Contact</a>
         </div>
@@ -51,12 +40,11 @@
     <!-- SERVICES SECTION -->
     <main class="container mx-auto py-16 px-4">
         <h2 class="text-4xl font-bold text-center mb-12">What We Do</h2>
-        
         <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            <!-- Business Intelligence (BI) Section -->
+            <!-- Business Intelligence Section -->
             <div class="bg-gray-800 p-8 rounded-lg">
                 <h3 class="text-2xl font-semibold text-blue-400">1. Business Intelligence (The Diagnosis)</h3>
-                <p class="text-gray-400 mt-2">We uncover the 'why' behind your data.</p>
+                <p class="mt-4 text-gray-400">We uncover the 'why' behind your data.</p>
                 <ul class="list-disc list-inside mt-4 space-y-2 text-gray-300">
                     <li>Process Audits & KPI Dashboards</li>
                     <li>Analytics & Strategy Recommendations</li>
@@ -64,11 +52,10 @@
                     <li>Market Trend Analysis</li>
                 </ul>
             </div>
-
             <!-- Marketing Campaigns Section -->
             <div class="bg-gray-800 p-8 rounded-lg">
                 <h3 class="text-2xl font-semibold text-blue-400">2. Marketing Campaigns (The Prescription)</h3>
-                <p class="text-gray-400 mt-2">We execute campaigns that deliver results.</p>
+                <p class="mt-4 text-gray-400">We execute campaigns that deliver results.</p>
                 <ul class="list-disc list-inside mt-4 space-y-2 text-gray-300">
                     <li>Social Media Campaigns (Google, Meta)</li>
                     <li>Paid Ads Strategy & Management</li>
@@ -79,15 +66,10 @@
         </div>
     </main>
 
-    <!-- JavaScript to toggle the mobile menu -->
     <script>
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+        mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
     </script>
-
 </body>
 </html>

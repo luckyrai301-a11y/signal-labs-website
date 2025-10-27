@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>About Signal Labs - Our Philosophy</title>
+    <title>Our Philosophy: We Observe, Not Just Analyze | Signal Labs</title>
     <meta name="description" content="Discover the Signal Labs philosophy. We go beyond analytics, conducting on-ground surveys and real-world research to build strategies rooted in reality.">
+    <style>
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(8.1px);
+            -webkit-backdrop-filter: blur(8.1px);
+        }
+    </style>
 </head>
-
 <body class="bg-gray-900 text-white pt-20">
-
     <!-- HEADER / NAVIGATION BAR -->
-    <header class="fixed top-0 left-0 w-full z-10 p-4 bg-gray-900/50 backdrop-blur-md">
+    <header class="p-4 glassmorphism fixed top-0 left-0 w-full z-10">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo -->
-            <!-- Logo -->
-<!-- Logo -->
-<a href="./index.html" class="block" style="height: 48px;">
-    <img class="h-full w-auto" src="./assets/logo.png" alt="Signal Labs Logo">
-</a>
-            
+            <a href="./index.html" class="text-xl font-bold">
+                <img class="h-12 w-auto" src="./assets/logo.png" alt="Signal Labs Logo">
+            </a>
+
             <!-- Desktop Navigation Links -->
             <nav class="hidden md:flex space-x-6">
-                <!-- Mark the current page as active -->
-                <a href="./about.html" class="text-blue-400 font-bold">About</a>
+                <a href="./about.html" class="text-blue-400 font-bold">About</a> <!-- Mark the current page as active -->
                 <a href="./services.html" class="hover:text-blue-400">Services</a>
                 <a href="./case-studies.html" class="hover:text-blue-400">Case Studies</a>
                 <a href="./contact.html" class="hover:text-blue-400">Contact</a>
@@ -38,7 +42,6 @@
                 </button>
             </div>
         </div>
-
         <!-- Mobile Menu (Initially hidden) -->
         <div id="mobile-menu" class="hidden md:hidden mt-4">
             <a href="./about.html" class="block py-2 px-4 text-sm bg-gray-700">About</a> <!-- Active state for mobile -->
@@ -47,54 +50,55 @@
             <a href="./contact.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Contact</a>
         </div>
     </header>
-
+    
     <!-- ABOUT US SECTION -->
     <main class="container mx-auto py-16 px-4">
-        <h2 class="text-4xl font-bold text-center">Our Philosophy</h2>
+        <h2 class="text-3xl font-bold text-center">Our Philosophy</h2>
         <div class="mt-12 max-w-3xl mx-auto">
             <h3 class="text-2xl font-semibold text-blue-400">We Don't Just Analyze — We Observe.</h3>
-            <p class="text-lg text-gray-300 mt-4">
+            <p class="mt-4 text-lg text-gray-300">
                 At Signal Labs, we believe that true business insights aren't found in spreadsheets alone. They are found in the real world, by observing your customers, understanding their environment, and listening to their challenges.
             </p>
-            <p class="text-lg text-gray-300 mt-4">
+            <p class="mt-4 text-lg text-gray-300">
                 That's why our "Diagnose" phase starts on the ground. We conduct real-world surveys, client interviews, and field research to gather raw, unfiltered data. This hands-on approach allows us to build strategies rooted in reality, not just analytics.
             </p>
+
             <!-- Placeholder for Vision, Mission, Core Values -->
             <div class="mt-8 p-6 bg-gray-800 rounded-lg">
-                <h4 class="text-xl font-bold">Coming Soon: Our Vision & Mission</h4>
+                <h4 class="text-xl font-bold">Coming Soon: Our Vision & Mission, Core Values</h4>
                 <p class="text-gray-400 mt-2">We'll be adding our core values and the mission that drives us forward.</p>
             </div>
         </div>
     </main>
-<!-- OUR FOUNDERS SECTION -->
-<div class="mt-16 text-center">
-    <h3 class="text-3xl font-bold">Our Founders</h3>
-    <div class="mt-8 grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-        
-        <!-- Rishikesh Rai Profile -->
-        <div class="flex flex-col items-center">
-            <!-- Replace with your actual photo URL -->
-            <img class="w-32 h-32 rounded-full object-cover" src="https://via.placeholder.com/150" alt="Photo of Rishikesh Rai">
-            <h4 class="text-xl font-bold mt-4">Rishikesh Rai</h4>
-            <p class="text-blue-400">Co-Founder & Chief Architect</p>
-            <p class="text-gray-400 mt-2 text-sm">
-                The architect of 'The System', Rishikesh specializes in turning complex data and on-ground insights into scalable growth frameworks for businesses.
-            </p>
+    
+    <!-- OUR FOUNDERS SECTION -->
+    <div class="mt-16 text-center">
+        <h3 class="text-3xl font-bold">Our Founders</h3>
+        <div class="mt-8 grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            <!-- Rishikesh Rai Profile -->
+            <div class="flex flex-col items-center">
+                 <!-- TODO: Replace with your actual photo URL -->
+                <img class="w-32 h-32 rounded-full object-cover" src="https://via.placeholder.com/150" alt="Rishikesh Rai, Co-founder & Chief Architect of Signal Labs">
+                <h4 class="text-xl font-bold mt-4">Rishikesh Rai</h4>
+                <p class="text-blue-400">Co-founder & Chief Architect</p>
+                <p class="text-gray-400 mt-2 text-sm">
+                    The architect of 'The System', Rishikesh specializes in turning complex data and on-ground insights into scalable growth frameworks for businesses.
+                </p>
+            </div>
+            <!-- Khushboo Singh Profile -->
+            <div class="flex flex-col items-center">
+                 <!-- TODO: Replace with your actual photo URL -->
+                <img class="w-32 h-32 rounded-full object-cover" src="https://via.placeholder.com/150" alt="Khushboo Singh, Co-founder & CEO of Signal Labs">
+                <h4 class="text-xl font-bold mt-4">Khushboo Singh</h4>
+                <p class="text-blue-400">Co-founder & CEO</p>
+                <p class="text-gray-400 mt-2 text-sm">
+                    A growth-focused leader, Khushboo excels at forging strategic partnerships and managing client relationships to turn prescribed strategies into real-world success.
+                </p>
+            </div>
         </div>
-
-        <!-- Khushboo Singh Profile -->
-        <div class="flex flex-col items-center">
-            <!-- Replace with her actual photo URL -->
-            <img class="w-32 h-32 rounded-full object-cover" src="https://via.placeholder.com/150" alt="Photo of Khushboo Singh">
-            <h4 class="text-xl font-bold mt-4">Khushboo Singh</h4>
-            <p class="text-blue-400">Co-Founder & CEO</p>
-            <p class="text-gray-400 mt-2 text-sm">
-                A growth-focused leader, Khushboo excels at forging strategic partnerships and managing client relationships to turn prescribed strategies into real-world success.
-            </p>
-        </div>
-
     </div>
-</div>   
+
+
     <!-- JavaScript to toggle the mobile menu -->
     <script>
         const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -104,6 +108,5 @@
             mobileMenu.classList.toggle('hidden');
         });
     </script>
-
 </body>
 </html>

@@ -4,46 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Contact Us - Signal Labs</title>
-    <meta name="description" content="Ready to grow? Contact Signal Labs to schedule your free business diagnosis call today and start the conversation.">
+    <title>Contact Us - Schedule Your Free Diagnosis | Signal Labs</title>
+    <meta name="description" content="Ready to grow? Contact Signal Labs to schedule your free business diagnosis call today and start the conversation. No sales pitch, just pure strategy.">
+    <style>
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(8.1px);
+            -webkit-backdrop-filter: blur(8.1px);
+        }
+    </style>
 </head>
-
 <body class="bg-gray-900 text-white pt-20">
-
     <!-- HEADER / NAVIGATION BAR -->
-    <header class="fixed top-0 left-0 w-full z-10 p-4 bg-gray-900/50 backdrop-blur-md">
+    <header class="p-4 glassmorphism fixed top-0 left-0 w-full z-10">
         <div class="container mx-auto flex justify-between items-center">
-            <!-- Logo -->
-            <!-- Logo -->
-<!-- Logo -->
-<a href="./index.html" class="block" style="height: 48px;">
-    <img class="h-full w-auto" src="./assets/logo.png" alt="Signal Labs Logo">
-</a>
-            <!-- Desktop Navigation Links -->
+            <a href="./index.html" class="text-xl font-bold"><img class="h-12 w-auto" src="./assets/logo.png" alt="Signal Labs Logo"></a>
             <nav class="hidden md:flex space-x-6">
                 <a href="./about.html" class="hover:text-blue-400">About</a>
                 <a href="./services.html" class="hover:text-blue-400">Services</a>
                 <a href="./case-studies.html" class="hover:text-blue-400">Case Studies</a>
-                <!-- Mark the current page as active -->
                 <a href="./contact.html" class="text-blue-400 font-bold">Contact</a>
             </nav>
-
-            <!-- Mobile Menu Button (Hamburger Icon) -->
-            <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-white focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
+            <div class="md:hidden"><button id="mobile-menu-button" class="text-white focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div>
         </div>
-
-        <!-- Mobile Menu (Initially hidden) -->
         <div id="mobile-menu" class="hidden md:hidden mt-4">
             <a href="./about.html" class="block py-2 px-4 text-sm hover:bg-gray-700">About</a>
             <a href="./services.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Services</a>
             <a href="./case-studies.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Case Studies</a>
-            <a href="./contact.html" class="block py-2 px-4 text-sm bg-gray-700">Contact</a> <!-- Active state for mobile -->
+            <a href="./contact.html" class="block py-2 px-4 text-sm bg-gray-700">Contact</a> <!-- Active state -->
         </div>
     </header>
 
@@ -53,10 +43,10 @@
             <h2 class="text-4xl font-bold">Start the Conversation</h2>
             <p class="text-gray-400 mt-4">Ready to grow? Let's talk about your business. Schedule your free diagnosis call today.</p>
         </div>
-
+        
         <div class="mt-12 max-w-xl mx-auto">
-            <!-- The form action is updated with your new Formspree URL -->
-            <form action="https://formspree.io/f/xyzbykgj" method="POST" class="space-y-6">
+            <!-- Replace with your own form endpoint. Formspree.io is a good, free option. -->
+            <form action="https://formspree.io/f/xyzykbjg" method="POST" class="space-y-6">
                 <div>
                     <label for="name" class="block text-sm font-medium text-gray-300">Full Name</label>
                     <input type="text" name="name" id="name" required class="mt-1 block w-full bg-gray-800 border-gray-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-white p-3">
@@ -78,15 +68,10 @@
         </div>
     </main>
 
-    <!-- JavaScript to toggle the mobile menu -->
     <script>
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+        mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
     </script>
-
 </body>
 </html>
