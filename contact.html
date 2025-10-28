@@ -45,26 +45,41 @@
         </div>
         
         <div class="mt-12 max-w-xl mx-auto">
-            <!-- Replace with your own form endpoint. Formspree.io is a good, free option. -->
+            <!-- === The NEW FORM with Honeypot starts here === -->
             <form action="https://formspree.io/f/xyzykbjg" method="POST" class="space-y-6">
+                <!-- Name Field -->
                 <div>
                     <label for="name" class="block text-sm font-medium text-gray-300">Full Name</label>
                     <input type="text" name="name" id="name" required class="mt-1 block w-full bg-gray-800 border-gray-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-white p-3">
                 </div>
+
+                <!-- Email Field -->
                 <div>
                     <label for="email" class="block text-sm font-medium text-gray-300">Email Address</label>
                     <input type="email" name="email" id="email" required class="mt-1 block w-full bg-gray-800 border-gray-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-white p-3">
                 </div>
+
+                <!-- Message Field -->
                 <div>
                     <label for="message" class="block text-sm font-medium text-gray-300">How can we help?</label>
                     <textarea name="message" id="message" rows="4" required class="mt-1 block w-full bg-gray-800 border-gray-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-white p-3"></textarea>
                 </div>
+
+                <!-- HONEYPOT FIELD START (This is the new "trap" part) -->
+                <div id="honeypot-field" style="display: none;">
+                    <label for="comments">Comments</label>
+                    <input type="text" name="comments" id="comments" tabindex="-1" autocomplete="off">
+                </div>
+                <!-- HONEYPOT FIELD END -->
+
+                <!-- Submit Button -->
                 <div>
                     <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg">
                         Book Free Consultation
                     </button>
                 </div>
             </form>
+            <!-- === The NEW FORM ends here === -->
         </div>
     </main>
 
